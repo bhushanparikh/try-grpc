@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package usermgmt;
+
+option go_package = "example.com/go-usermgmt-grpc;go_usermgnt_grpc";
+
+service UserManagement {
+    rpc CreateUser (UserRequest) returns (UserResponse) {}
+}
+
+message UserRequest {
+    int32 userId = 1;
+    string userName = 2;
+    int32 age = 3;
+}
+
+message UserResponse {
+    int32 userId = 1;
+    string userName = 2;
+    int32 age = 3;
+}
