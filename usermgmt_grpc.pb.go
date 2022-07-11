@@ -58,8 +58,9 @@ func (UnimplementedUserManagementServer) CreateUser(context.Context, *UserReques
 	return nil, status.Errorf(codes.Unimplemented, "method CreateUser not implemented")
 }
 
-/* This function will be implemented later during development */
-
+/* 
+This function will be implemented later during development 
+*/
 func (UnimplementedUserManagementServer) mustEmbedUnimplementedUserManagementServer() {}
 
 // UnsafeUserManagementServer may be embedded to opt out of forward compatibility for this service.
